@@ -1,6 +1,9 @@
-import styles from 'styled-components'
+import styled from "styled-components";
 
-const MainHeader = styled.header `
+const SiteHeader = styled.header`
   display: flexbox;
-  flex-direction: row;  
+  justify-content: space-between;
+  width: 100%;
 `;
+
+export { SiteHeader }
