@@ -1,26 +1,28 @@
-import React, {Component} from 'react'
+import React from 'react'
 import Link from 'gatsby-link'
+import styled from 'styled-components'
 
-import {SiteHeader} from '../../components/Header'
-import {Wrapper} from '../../components/Wrapper'
-
-
-export default class IndexPage extends Component {
-  render() {
-    return
-      <Wrapper>
-        <SiteHeader>Hello</SiteHeader>
-        <h1>I am Harman Pannu</h1>
-      </Wrapper>
-  }
-}
-
-// const IndexPage = () => (
-//   <Wrapper>
+// import Wrapper from '../components/Wrapper'
+// import SiteHeader from "../components/Header/Header"
+const Wrapper = styled.section`
+  max-width: 992px;
+  margin: auto;
+  padding: 0 1em;
+  color: #333233;
+  background: #fffeff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+`;
 
 
+const IndexPage = () => (
+  <Wrapper>
+    <h1>I am Harman Pannu</h1>
+  </Wrapper>
+);
 
-//   </Wrapper>
-// );
+export default IndexPage
 
-// export default IndexPage
+
