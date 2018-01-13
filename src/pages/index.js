@@ -1,6 +1,7 @@
-import React from 'react'
+import React, {Component} from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
+import Picture from '../images/profile.png'
 
 // import Wrapper from '../components/Wrapper'
 // import SiteHeader from "../components/Header/Header"
@@ -16,12 +17,24 @@ const Wrapper = styled.section`
   align-content: center;
 `;
 
+const ProfilePicture = styled.picture`
+  width: 200px;
+  height: 200px;
+  text-alighn:
+`;
 
-const IndexPage = () => (
-  <Wrapper>
-    <h1>I am Harman Pannu</h1>
-  </Wrapper>
-);
+class IndexPage extends Component {
+  render() {
+    return <Wrapper>
+        <ProfilePicture>
+          <img src={Picture} alt=""/>
+        </ProfilePicture>
+        <h1>I am Harman Pannu</h1>
+      </Wrapper>;
+  
+  }
+} 
+
 
 export default IndexPage
 
